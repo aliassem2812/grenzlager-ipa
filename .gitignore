@@ -1,0 +1,7 @@
+.env
+vendor/
+*.log
+*.lock
+.vscode/
+Thumbs.db
+.DS_Store

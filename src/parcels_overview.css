@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Grenlager — VERHERIGE SYSTEM GLOBALE STYLES WURDEN ENTFERNT
+   ========================================================================== */
+
+/* ==========================================================================
+   Parcels Overview — Aufklappbare Detailzeilen
+   ========================================================================== */
+
+/* Aufklappbare Detailzeile */
+.detail-row td {
+    background: #f8f9fa;
+    padding: 0 !important;
+    border-top: none !important;
+}
+.detail-inhalt {
+    padding: 1rem 1.5rem;
+    border-top: 2px solid #dee2e6;
+}
+.detail-spalten {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+.detail-block h6 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6c757d;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+.detail-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+}
+.detail-block ul li {
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #dee2e6;
+    color: #495057;
+}
+.detail-block ul li:last-child {
+    border-bottom: none;
+}
+
+/* Aufklapp-Pfeil auf der Hauptzeile */
+.toggle-detail {
+    cursor: pointer;
+    user-select: none;
+}
+.toggle-detail:hover td {
+    background: #f0f4ff;
+}
+.pfeil {
+    display: inline-block;
+    transition: transform 0.2s;
+    font-style: normal;
+    color: #6c757d;
+}
+.pfeil.offen {
+    transform: rotate(90deg);
+}
